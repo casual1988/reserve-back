@@ -8,7 +8,7 @@ public class UserDto {
     private String username;
     private String password;
     private int age;
-    private long salary;
+    private int salary;
 
     public int getId() {
         return id;
@@ -58,11 +58,11 @@ public class UserDto {
         this.age = age;
     }
 
-    public long getSalary() {
+    public int getSalary() {
         return salary;
     }
 
-    public void setSalary(long salary) {
+    public void setSalary(int salary) {
         this.salary = salary;
     }
 }

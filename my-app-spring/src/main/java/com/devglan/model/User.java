@@ -25,6 +25,19 @@ public class User {
     @Column
     private int age;
 
+    public User(){
+
+    }
+
+    public User(String firstName, String lastName, String username, String password, long salary, int age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.username = username;
+        this.password = password;
+        this.salary = salary;
+        this.age = age;
+    }
+
     public int getId() {
         return id;
     }
