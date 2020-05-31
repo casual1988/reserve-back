@@ -44,12 +44,19 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     public JwtAuthenticationFilter authenticationTokenFilterBean() throws Exception {
         return new JwtAuthenticationFilter();
     }
+    
+    
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.cors().and().csrf().disable().
                 authorizeRequests()
                 .antMatchers("/token/**").permitAll()
+               /* .antMatchers("/index.html").permitAll()
+                .antMatchers("/favicon.ico").permitAll()
+                .antMatchers("/static/**").permitAll()
+                .antMatchers("/manifest.json").permitAll()
+                .antMatchers("/").permitAll()*/
                 .anyRequest().authenticated()
                 .and()
                 .exceptionHandling().authenticationEntryPoint(unauthorizedHandler).and()

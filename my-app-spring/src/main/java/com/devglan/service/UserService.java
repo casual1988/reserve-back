@@ -1,7 +1,7 @@
 package com.devglan.service;
 
+import com.devglan.dto.UserDto;
 import com.devglan.model.User;
-import com.devglan.model.UserDto;
 
 import java.util.List;
 

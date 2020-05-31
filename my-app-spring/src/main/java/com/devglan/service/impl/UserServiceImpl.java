@@ -1,8 +1,8 @@
 package com.devglan.service.impl;
 
 import com.devglan.dao.UserDao;
+import com.devglan.dto.UserDto;
 import com.devglan.model.User;
-import com.devglan.model.UserDto;
 import com.devglan.service.UserService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
